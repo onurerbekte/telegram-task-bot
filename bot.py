@@ -64,6 +64,9 @@ async def demo(store):
 
 
 def main():
+    import sys
+    if hasattr(sys.stdout,"reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
     parser=argparse.ArgumentParser();parser.add_argument("--demo",action="store_true");args=parser.parse_args()
     if args.demo:
         import tempfile
