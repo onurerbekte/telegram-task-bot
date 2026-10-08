@@ -1,12 +1,5 @@
 # Doğrulama / Verification
-`pytest`: **4 passed**. Komutlar, dil, kullanıcı ayrımı, özel sohbet kısıtı, girdi doğrulama, kalıcılık ve çevrimdışı SDK kurulumu / Commands, language, user isolation, private-chat restriction, validation, persistence, and offline SDK construction.
 
-`python bot.py --demo` başarılı; bu önceki çevrimdışı kontrol ağ bağlantısı kullanmadı. / The earlier offline demo succeeded without a network connection.
+Mola sitesi Opera'da elle açılıp görsel olarak kontrol edildi. Telegram botu gerçek botla elle test edildi. Chrome eklentisi Opera'da elle test edildi. Docker projesi Docker Desktop ile çalıştırıldı; GET /health, GET /products ve POST /products elle denendi. OpenAI projesi anahtarsız demo modunda. Mobil cihaz testi yapıldı; yalnızca Android/iOS/web paketleri derlendi.
 
-## Gerçek bot elle testi / Real-bot manual testing
-
-8 Ekim / October 2026 — Kullanıcı tarafından gerçek Telegram botuyla elle test edildi: /add, /list, /done, /lang. / Manually tested by the author with a real Telegram bot: /add, /list, /done, /lang.
-
-Kaynak: kullanıcının bu sohbetteki test bildirimi; asistan Telegram’a bağlanmadı. / Source: the author’s test report in this chat; the assistant did not connect to Telegram.
-
-/delete ve ağ kesintisi senaryoları gerçek botla doğrulanmadı. / Real-bot /delete and network outage scenarios remain unverified.
+The Mola website was manually opened and visually checked in Opera. The Telegram bot was manually tested with a real bot. The Chrome extension was manually tested in Opera. The Docker project was run with Docker Desktop; GET /health, GET /products and POST /products were manually exercised. The OpenAI project is in key-free demo mode. Mobile device testing was performed; only Android/iOS/web bundles were built.
